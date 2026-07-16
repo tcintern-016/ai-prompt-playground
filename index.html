@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Prompt Playground</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="playground">
+        <header class="playground-header">
+            <h1>AI Prompt Playground</h1>
+            <p>Type a prompt below and submit it to see it displayed. No AI connected yet — just practicing the fundamentals.</p>
+        </header>
+
+        <section class="input-card">
+            <label for="promptInput">Your Prompt</label>
+            <textarea id="promptInput" rows="5" placeholder="e.g. Explain recursion like I'm five..."></textarea>
+            <p id="errorMsg" class="error-msg"></p>
+            <button id="submitBtn">Submit</button>
+        </section>
+
+        <section class="output-card" id="outputCard">
+            <h2>Submitted Prompt</h2>
+            <p id="outputText" class="placeholder">Nothing submitted yet — your prompt will appear here.</p>
+        </section>
+
+        <section class="history-card" id="historyCard" hidden>
+            <h2>History</h2>
+            <ul id="historyList"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
